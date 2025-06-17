@@ -24,15 +24,14 @@ export default function Home() {
         </div>
         <div className="right w-[85%] bg-slate-900">
           <div id="videos">
-
           {videos.map((item, index) => {
-            return <div key={index} id="video">
-              <img src={item.Thumbnail} alt="video thumbnail">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+            return <div key={index} id="video" className="bg-gray-800 text-white p-4 m-2 w-fit h-fit rounded-lg">
+              <img src={item.Thumbnail} className="rounded-xl" alt="video thumbnail"/>
+              <h3 className="text-xl text-center">{item.title}</h3> 
+              <p className="text-sm text-center">{item.description}</p>
           </div>
             })
-          }
+            }
           </div>
         </div>
         </div>
